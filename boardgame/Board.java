@@ -42,9 +42,9 @@ public class Board {
 		if (thereIsAPiece(position)) {
 			throw new BoardException("Position " + position +" is occupied.");
 		}
+		
 		pieces[position.getRow()][position.getColumn()] = piece;
 		piece.position = position;
-		
 	}
 	
 	public boolean positionExists(Position position) {
